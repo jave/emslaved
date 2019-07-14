@@ -1,0 +1,16 @@
+* Emslaved
+
+Emslaved is meant to be some bits and pieces to control a laptop from
+an emacs instance running on a server.
+
+its not immediately clear how to do this, so theres a bit of
+experimentation going on here.
+
+The pieces so far:
+- emslaved-ff :: a web extension to control a client firefox instance
+
+
+** failed experiments
+some stuff didnt go too well, so i document for posterity.
+- encumberurls.sh :: manipulate iptables, in order to enable/disable
+     urls on the laptop. this method is too harsh.
