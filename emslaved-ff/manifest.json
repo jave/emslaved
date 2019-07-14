@@ -1,0 +1,44 @@
+{
+
+    "description": "Emslave Firefox",
+    "manifest_version": 2,
+    "name": "Emslave-firefox",
+    "version": "1.0",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "permissions": [
+	"downloads",
+	"menus",
+	"storage",
+	"tabs",
+	"webNavigation",
+        "nativeMessaging"
+    ],
+
+    "applications": {
+        "gecko": {
+            "id": "emslaved-ff@verona.se",
+            "strict_min_version": "50.0"
+        }
+    },
+
+
+    "optional_permissions": [
+	"<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["emslave.js"]
+        }
+    ],
+    "background": {
+	"scripts": [ "background.js"]
+    },
+    
+    "browser_action": {
+        "default_icon": "icons/border-48.png"
+    }
+
+}
