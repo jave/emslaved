@@ -6,9 +6,20 @@ an emacs instance running on a server.
 its not immediately clear how to do this, so theres a bit of
 experimentation going on here.
 
-The pieces so far:
-- emslaved-ff :: a web extension to control a client firefox instance
+** emslaved-ff
+a web extension to control a client firefox instance.
+atm you get a button that disables/enables a couple of urls in ff.
+controlling from the server is WIP.
 
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
+
+about:debugging, load temporary add on. select a file in the
+emslaved-ff dir, load it. you have to do this a lot so is tedious.
+
+
+web-ext is a tool that can automate the thing.
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext
 
 ** failed experiments
 some stuff didnt go too well, so i document for posterity.

@@ -11,11 +11,17 @@
 	"downloads",
 	"menus",
 	"storage",
+        // "<all_urls>",
 	"tabs",
+        "activeTab",
 	"webNavigation",
         "nativeMessaging"
+        
+        
     ],
 
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    
     "applications": {
         "gecko": {
             "id": "emslaved-ff@verona.se",
@@ -38,7 +44,9 @@
     },
     
     "browser_action": {
-        "default_icon": "icons/border-48.png"
-    }
-
+        "default_icon": "icons/border-48.png",
+        "default_title": "Emslave the Fox"
+        ,
+        "default_popup": "popup.html"        
+    }    
 }
